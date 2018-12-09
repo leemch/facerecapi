@@ -34,7 +34,7 @@ app.use(bodyParser.json());
 
 app.get("/", (req, res) =>{
 
-	//res.send(database.users);
+	//res.send(db.users);
   res.send("It is working");
 });
 
@@ -54,7 +54,7 @@ app.post("/imageurl", (req, res) => {image.handleApiCall(req,res)});
 
 
 app.listen(process.env.PORT || 3000, () =>{
-	console.log('App is running on port 3000 ${process.env.PORT}');
+	console.log('App is running on port ${process.env.PORT}');
 });
 
 
